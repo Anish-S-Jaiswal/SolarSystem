@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Resume</title>
+</head>
+<style>
+  h1 {
+    color: rgb(255, 0, 0);
+  }
+
+  fieldset {
+    background-color: rgb(104, 172, 224);
+  }
+
+  form {
+    background-color: rgb(11, 76, 174);
+    color: maroon
+  }
+</style>
+<body>
+  <form>
+    <fieldset id="anish">
+      <legend><b>
+          <h1>Resume</h1>
+        </b></legend>
+      Name <input type="text" placeholder="Enter your name">
+      <br>
+      <br>
+      D.O.B <input type="date">
+      <br>
+      <br>
+      Address <textarea placeholder="Residential Address"></textarea>
+      <br>
+      <br>
+      Mobile No. <input type="number" placeholder="Personal">
+      <br>
+      <br>
+      Hobby <input type="text">
+      <br>
+      <br>
+      Please Select Your Image <input type="file" value="image">
+      <br>
+      <br>
+      State <select>
+        <option>--Select--</option>
+        <option>Maharashtra</option>
+        <option>Uttar Pradesh</option>
+        <option>Madhya Pradesh</option>
+        <option>Bihar</option>
+        <option>Jammu-Kashmir</option>
+      </select>
+      <br>
+      <br>
+      Education <select>
+        <option>--Select--</option>
+        <option>10th Pass</option>
+        <option>12th Pass</option>
+        <option>Undergraduate</option>
+        <option>Postgraduate</option>
+        <option>Graduate</option>
+      </select>
+      <br>
+      <br>
+      Caste <input type="checkbox">OBC
+      <input type="checkbox">OPEN
+      <input type="checkbox">SC
+      <input type="checkbox">ST
+      <input type="checkbox">OTHER
+      <br>
+      <br>
+      Gender <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female
+      <br>
+      <br>
+      Describe About Yourself <textarea name="" id="" cols="40" rows="5" placeholder="Tell me about yourself"></textarea>
+      <br>
+      <br>
+      Set A Time For Appointment <input type="time">
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <button onclick="prin()">Print</button>
+    </fieldset>
+  </form>
+</body>
+<script>
+  function prin()
+  {
+    var a=document.getElementById("anish").value;
+   print(a);
+  }
+</script>
+</html>
